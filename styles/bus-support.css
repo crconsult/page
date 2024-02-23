@@ -1,0 +1,127 @@
+main h2{
+    font-size: 2rem;
+    color: rgb(35,35,35);
+    /* text-transform: capitalize; */
+    text-align: center;
+}
+
+main h3{
+    font-size: 1.5rem;
+    color: rgb(35,35,35);
+    text-transform: capitalize;
+    text-align: center; 
+}
+
+#business-writing{
+    width: 90%;
+    margin: 0.8rem auto;
+    text-align: center;
+}
+
+#business-writing img{
+    width: 12.5rem;
+    height: 10rem;
+    border-radius: 6px;
+    /* object-fit: cover; */
+}
+
+#business-writing ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* #data-analysis li{
+    display: flex;
+} */
+
+#business-writing li{
+    padding: 0.8rem;
+    box-shadow: 2px 4px 6px black;
+    border-radius: 6px;
+    display: block;
+    height: auto;
+}
+
+main p{
+    color: rgb(134,134,134);
+    font-size: 1.5rem;
+}
+
+#business-writing #desc{
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#business-writing #action a{
+    background-color: rgb(202, 137, 16);
+    padding: 0.3rem 0.5rem;
+    color: white;
+    border-radius: 4px;
+}
+
+#business-writing #action a:hover{
+    background-color: rgb(247, 167, 19);
+    color: rgb(80, 78, 78);
+}
+
+/* Make the main section responsive */
+/****************************** Next mande */
+/* Small screens and laptops */
+@media(max-width: 769px){
+    main #business-writing ul{
+        padding: 0;
+        margin-top: 1.2rem;
+        grid-template-columns: 1fr;
+     }
+ }
+
+
+/* Ipad and tablets */
+@media(max-width: 768px){
+   main #business-writing ul{
+        padding: 0;
+        margin-top: 1.2rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    #first{
+        margin-top: 0;
+        padding: 0;
+    }
+    main h4{
+        margin-top: 2rem;
+        margin-bottom: 0;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    main #business-writing ul p{
+        font-size: 1rem;
+     }
+     main #business-writing #desc{
+        height: auto;
+     }
+     main #business-writing li{
+        padding: 0.8rem;
+        box-shadow: 1px 1.5px 2px black;
+     }
+}
+
+/* Mobile phones */
+@media(max-width: 480px){
+    main li img{
+        object-fit: cover;
+        width: 100%;
+        height: 18.75rem;
+    }
+    main li{
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+    }
+}
